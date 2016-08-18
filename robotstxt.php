@@ -3,10 +3,10 @@
 $kirby->set('template',  'robotstxt', __DIR__ . DS . 'templates'  . DS .'robotstxt.php');
 $kirby->set('blueprint', 'robotstxt', __DIR__ . DS . 'blueprints' . DS .'robotstxt.yml');
 
-$pages = site()->pages();
-if(!$pages->findByURI('robotstxt')) {
+$site = site();
+if(!$site->find('robotstxt')) {
   try {
-    $pages->children()->create('robotstxt', 'robotstxt', array(
+    $site->children()->create('robotstxt', 'robotstxt', array(
       'title' => 'Robots.txt'
     ));
   } catch(Exception $e) {
