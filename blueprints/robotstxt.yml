@@ -1,0 +1,20 @@
+title: Robots.txt
+options:
+  preview: false
+  status: false
+  url: false
+  delete: false
+pages: false
+files: false
+fields:
+  title:
+    label: Title
+    type: text
+    required: false
+  rules:
+    label: Custom robots.txt rules
+    type: textarea
+    size: large
+    placeholder: "Disallow: /folder/"
+    buttons: false
+    help: "For example, see: http://www.robotstxt.org/robotstxt.html"
