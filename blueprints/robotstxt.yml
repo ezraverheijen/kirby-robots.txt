@@ -17,4 +17,4 @@ fields:
     size: large
     placeholder: "Disallow: /folder/"
     buttons: false
-    help: "For example, see: http://www.robotstxt.org/robotstxt.html"
+    help: "For examples, see: http://www.robotstxt.org/robotstxt.html"
