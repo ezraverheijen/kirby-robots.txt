@@ -2,6 +2,7 @@ title: Robots.txt
 options:
   preview: false
   status: false
+  template: false
   url: false
   delete: false
 pages: false
