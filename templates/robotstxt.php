@@ -3,12 +3,11 @@
 header::type('text/plain');
 header('X-Robots-Tag: noindex');
 
-echo 'User-agents: *' . PHP_EOL;
-
 if($page->rules()->isNotEmpty()) {
   echo $page->rules();
 } else {
-  // allow all robots complete access
+  echo '# allow all robots complete access' . PHP_EOL;
+  echo 'User-agents: *' . PHP_EOL;
   echo 'Disallow:';
 }
 

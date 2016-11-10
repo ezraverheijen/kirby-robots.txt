@@ -7,15 +7,12 @@ options:
   delete: false
 pages: false
 files: false
+icon: android
 fields:
-  title:
-    label: Title
-    type: text
-    required: false
   rules:
-    label: Custom robots.txt rules
+    label: Robots.txt
     type: textarea
-    size: large
-    placeholder: "Disallow: /folder/"
     buttons: false
-    help: "For examples, see: http://www.robotstxt.org/robotstxt.html"
+    help:
+      en: "Edit the content of your robots.txt. For examples, see: http://www.robotstxt.org/robotstxt.html."
+      nl: "Bewerk de inhoud van je robots.txt. Voor voorbeelden, zie: http://www.robotstxt.org/robotstxt.html."
