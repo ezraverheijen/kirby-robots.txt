@@ -8,7 +8,7 @@ if(!site()->find('robotstxt')) {
   try {
     site()->children()->create('robotstxt', 'robotstxt', [
       'title' => 'Robots.txt',
-      'rules' => "# allow all robots complete access\nUser-agents: *\nDisallow:"
+      'rules' => "# allow all robots complete access\nUser-agent: *\nDisallow:"
     ]);
   } catch(Exception $e) {
     echo $e->getMessage();
