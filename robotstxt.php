@@ -1,7 +1,7 @@
 <?php
 
-$kirby->set('template',  'robotstxt', __DIR__ . DS . 'templates'  . DS .'robotstxt.php');
-$kirby->set('blueprint', 'robotstxt', __DIR__ . DS . 'blueprints' . DS .'robotstxt.yml');
+$kirby->set('template',  'robotstxt', __DIR__ . DS . 'templates'  . DS . 'robotstxt.php');
+$kirby->set('blueprint', 'robotstxt', __DIR__ . DS . 'blueprints' . DS . 'robotstxt.yml');
 
 // try to create Robots.txt panel page
 if(!site()->find('robotstxt')) {
