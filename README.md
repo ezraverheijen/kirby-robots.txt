@@ -1,8 +1,8 @@
 # Kirby Robots.txt
 
-![Version](https://img.shields.io/badge/version-1.2.0-green.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg) ![Kirby Version](https://img.shields.io/badge/Kirby-2.2%2B-red.svg)
+![Version](https://img.shields.io/badge/version-1.3.0-green.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg) ![Kirby Version](https://img.shields.io/badge/Kirby-2.2%2B-red.svg)
 
-*Version 1.2.0*
+*Version 1.3.0*
 
 Kirby plugin that makes the `robots.txt` file editable as a page in the panel.
 
@@ -58,6 +58,10 @@ c::set('cache.ignore', array(
 Also remember to exclude the robots.txt from your XML Sitemap(s), RSS Feed(s), etc.
 
 ## Changelog
+
+**1.3.0**
+
+- Fixed routing when the error page has a different URI than `error`
 
 **1.2.0**
 
