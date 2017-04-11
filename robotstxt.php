@@ -15,17 +15,17 @@ if(!site()->find('robotstxt')) {
   }
 }
 
-kirby()->routes(array(
-  array(
+kirby()->routes([
+  [
     'pattern' => 'robots.txt',
     'action'  => function() {
       return page('robotstxt');
     }
-  ),
-  array(
+  ],
+  [
     'pattern' => 'robotstxt',
     'action'  => function() {
-      return page('error');
+      return site()->visit(site()->errorPage());
     }
-  )
-));
+  ]
+]);
